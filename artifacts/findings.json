@@ -1,0 +1,42 @@
+[
+  {
+    "id": "sparse_pincode_risk",
+    "title": "Pincode Sparsity Prevents Blanket Blacklisting",
+    "finding": "Out of 1066 distinct pincodes in the dataset, 1036 (97.19%) have fewer than 5 historical orders.",
+    "practicalImplication": "A policy that automatically cancels COD orders from 'bad pincodes' would blacklist hundreds of serviceable locations based on 1 single return, suppressing genuine sales without reliable statistical signal.",
+    "evidence": {
+      "numerator": 1036,
+      "denominator": 1066
+    }
+  },
+  {
+    "id": "first_time_customer_lift",
+    "title": "First-Time Customers Carry Elevated RTO but Generate High Delivered Volume",
+    "finding": "First-time buyers have a 30.23% RTO rate (452/1495), compared to 22.97% for repeat buyers (113/492) — an elevation of 7.27 percentage points.",
+    "practicalImplication": "Despite higher RTO, first-time customers delivered 1,043 successful orders. Cancelling them would destroy future customer equity and squander Meta acquisition spend.",
+    "evidence": {
+      "firstTimeRtoRate": 30.23,
+      "repeatRtoRate": 22.97
+    }
+  },
+  {
+    "id": "channel_disparity_meta_vs_direct",
+    "title": "Meta Ads Traffic Has 8.32% Higher RTO Than Direct Navigation",
+    "finding": "Meta Ads traffic exhibits a 31.24% RTO rate (239/765) versus 22.92% for Direct traffic (58/253).",
+    "practicalImplication": "Meta impulse shoppers have lower initial brand commitment. Instead of turning off Meta ads, pre-dispatch WhatsApp confirmation or a ₹30 prepaid discount nudge recovers high-intent buyers while filtering uncommitted browsers.",
+    "evidence": {
+      "metaRtoRate": 31.24,
+      "directRtoRate": 22.92
+    }
+  },
+  {
+    "id": "aov_discrepancy",
+    "title": "Empirical AOV is ₹920 vs Brief Planning Assumption of ₹649",
+    "finding": "The actual mean resolved order value in the historical sample is ₹919.96, significantly higher than the brief's ₹649 planning AOV.",
+    "practicalImplication": "Higher order values increase delivered gross contribution per order, pushing the economic break-even risk threshold even higher (cancellation makes financial sense only at higher return probabilities).",
+    "evidence": {
+      "empiricalAov": 919.96,
+      "planningAov": 649
+    }
+  }
+]

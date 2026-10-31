@@ -1,0 +1,54 @@
+{
+  "sourceFile": "orders_sample.csv",
+  "sha256": "268c343390168a97fdf742cb6bd223122cec022cc1f7aa75c8694a45122e1107",
+  "generatedAt": "2026-10-31T12:46:39.780Z",
+  "rawRowCount": 2018,
+  "exactDuplicateCount": 30,
+  "uniqueRowCount": 1988,
+  "inTransitCount": 1,
+  "resolvedCount": 1987,
+  "deliveredCount": 1422,
+  "rtoCount": 565,
+  "rtoRatePercent": 28.4348,
+  "meanResolvedValue": 919.9572,
+  "cohorts": {
+    "firstTimeBuyers": {
+      "total": 1495,
+      "rto": 452,
+      "delivered": 1043,
+      "rtoRatePercent": 30.2341
+    },
+    "repeatBuyers": {
+      "total": 492,
+      "rto": 113,
+      "delivered": 379,
+      "rtoRatePercent": 22.9675
+    },
+    "metaAds": {
+      "total": 765,
+      "rto": 239,
+      "rtoRatePercent": 31.2418
+    },
+    "direct": {
+      "total": 253,
+      "rto": 58,
+      "rtoRatePercent": 22.9249
+    },
+    "september2026": {
+      "total": 329,
+      "rto": 86,
+      "delivered": 243,
+      "rtoRatePercent": 26.1398
+    }
+  },
+  "dataHygiene": {
+    "missingCity": 4,
+    "missingPincode": 12,
+    "priorRtoExceedsPriorOrders": 4,
+    "nonpositiveOrderValue": 3,
+    "invalidPhoneFormat": 32,
+    "distinctPincodes": 1066,
+    "pincodesWithFewerThan5Orders": 1036,
+    "pincodesWithFewerThan5Percent": 97.19
+  }
+}
